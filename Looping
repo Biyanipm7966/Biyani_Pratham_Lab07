@@ -1,0 +1,47 @@
+public class looping {
+ public static void main(String[] args) {
+        for (int i = 0; i < 31; i++) {
+            System.out.println(i);
+        }
+        System.out.println("\n");
+        for (int k = 30; k >= 0; k--) {
+            System.out.println(k);
+        }
+        System.out.println("\n");
+        for (int j = 0; j < 19; j = j + 3) {
+            System.out.println(j);
+        }
+        System.out.println("\n");
+        for (int l = 10; l > -1; l = l - 2) {
+            System.out.println(l);
+        }
+        System.out.println("\n");
+
+        for (int c = 0; c <= 4; c++) {
+            for (int j = 0; j <= c; j++) {
+
+                System.out.printf("*");
+            }
+
+            System.out.printf("\n");
+        }
+        System.out.println("\n");
+
+
+        for (int a = 5; a >= 1; a = a - 1) {
+            for (int z = 1; z <= a; z = z + 1) {
+                System.out.printf("*");
+            }
+
+            System.out.println('\n');
+        }
+
+        for (int e = 1; e <= 5; e = e + 1) {
+            for (int w = 1; w <= 5; w = w + 1) {
+                System.out.printf("*");
+            }
+            System.out.println("\n");
+        }
+   
+}
+}
