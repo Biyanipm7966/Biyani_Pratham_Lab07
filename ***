@@ -1,0 +1,28 @@
+public class InitialCapital {
+    public static void main(String[] args) {
+        char firstInitial = 'P';
+        if (firstInitial == 'I') {
+            firstInitial = 'R';
+        }
+
+        int height = 9;
+        int width = 19;
+        int midRow = height / 2;
+
+        for (int row = 0; row < height; row++) {
+            int numStars = 0;
+            if (row < midRow) {
+                numStars = (2 * row) + 2;
+            } else if (row == midRow) {
+                numStars = width;
+            } else {
+                numStars = (2 * (height - row)) + 2;
+            }
+
+            for (int i = 0; i < numStars; i++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
